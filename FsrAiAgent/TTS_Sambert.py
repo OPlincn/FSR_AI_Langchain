@@ -18,7 +18,7 @@ class TTS_Sambert():
                                     format='wav'
                                     )
         # 记得改一下以下, 它们的作用是写入TTS输出的音频结果并播放
-        if result.get_aud路径io_data() is not None:
+        if result.get_audio_data() is not None:
             with open(rf'/Users/oplin/Documents/VscodeProjects/FSR-AiProject/TTSoutput.wav', 'wb') as f:
                 f.write(result.get_audio_data())
             os.system("open /Users/oplin/Documents/VscodeProjects/FSR-AiProject/TTSoutput.wav")
